@@ -37,6 +37,7 @@ This project serves as a tutorial for working with Python data science tools, sp
 Before running this project, ensure you have the following installed:
 
 - Python 3.10 or higher (requires `|` union type syntax)
+  - **Note**: For Python versions < 3.10, you'll need to use `Union[int, None]` from the `typing` module instead of `int | None`
 - pip (Python package manager)
 
 ### Required Python Packages
@@ -70,7 +71,7 @@ Before running this project, ensure you have the following installed:
 ```
 lau_bermudez_tutorials/
 ├── assets/
-│   └── penguins.csv          # Palmer Penguins dataset
+│   └── penguins.csv          # Palmer Penguins dataset (downloaded)
 ├── Download.py               # Script to download the penguin dataset
 ├── Interactive.py            # Create Hero/Villain database with SQLModel
 ├── Read_pandas.py            # Query database and return DataFrame
